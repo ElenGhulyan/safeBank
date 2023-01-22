@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* Calculator Style */
+input[type=radio] {
+    border: 1px solid #24228D;
+    border-radius: 2px;
+    width: 20px;
+    height: 20px;
+    -webkit-appearance: none;
+}
+
+input[type=radio]:checked {
+    background-image: url("../images/v.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+label.period-lbl {
+    margin-right: 30px;
+    font-size: 13px;
+    color: #31313D;
+    font-weight: 400;
+}
+
+
+
+
+input,
+output {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+}
+
+output {
+    background: #ff4500;
+    padding: 5px 16px;
+    border-radius: 3px;
+    color: red;
+}
+
+input[type="number"] {
+    width: 40px;
+    padding: 4px 5px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+}
+
+/* input[type="range"]:focus,
+input[type="number"]:focus {
+  box-shadow: 0 0 3px 1px #4b81dd;
+  outline: none;
+} */
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    /* max-width: 713px !important; */
+    height: 4px;
+    background: #ccc;
+    border-radius: 5px;
+    background-image: linear-gradient(#3BAAA3CC, #3BAAA3CC);
+    background-repeat: no-repeat;
+}
+input[type="range"]#payment {
+    background-size: 20% 100%;
+}
+
+input[type='range']#price{
+    background-size: 75% 100%;
+
+}
+
+input[type='range']#period{
+    background-size: 7% 100%;
+}
+input[type='range']#rate{
+    background-size: 49% 100%;
+}
+
+
+/* Input Thumb */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background: #24228D;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+}
+
+input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #ff4500;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+}
+
+input[type="range"]::-ms-thumb {
+    -webkit-appearance: none;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background: #24228D;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #000;
+}
+
+
+form {
+    /* display: inline-block; */
+    padding: 25px 12px 30px;
+    border-left: none;
+    border-top: none;
+    border-radius: 20px;
+    /* border-bottom-left-radius: 5px; */
+}
+
+/* Calculator Style */
+
+
+
+section.loan {
+    /* padding: 35px 17px; */
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+
+label.payment,label.price-title, label.price-title, label.rate, .year-title, .month-title  {
+
+    font-size: 13px;
+    color: #31313D;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+}
+
+#pricevalue, #downpayment, #rateValue, #periodValue, #period-type, .period-lbl {
+    font-size: 15px;
+    color: #31313D;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+
+.form-group-info {
+    /* margin-bottom: 6px; */
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.loan-section-title{
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+    color: #24228D;
+    margin-bottom: 0;
+}
+
+
+.period-radio {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.change-period-type {
+    margin-left: 6px;
+}
+
+label.month-title {
+    margin-left: 27px;
+}
+
+.monthly-payment {
+    margin-top: 20px;
+    text-align: center;
+}
+
+h2.loan-title-payment {
+    font-size: 15px;
+    font-weight: 500;
+    color: #A7A6C9E0;
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+h2#monthly-payment-price {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #24228D;
+}
+
+button.apply-now {
+    color: #24228D;
+    padding: 9px 14px;
+    font-weight: 500;
+    font-size: 13px;
+    border: 1px solid #24228D;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+
+h2.loan-section-title::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid #A595C0;
+    width: 101px;
+    padding-top: 10px;
+    margin-bottom: 0;
+}

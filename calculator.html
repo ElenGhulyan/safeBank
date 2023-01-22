@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="css/loan.css">
+</head>
+<body>
+
+<section class="loan">
+  <h2 class="loan-section-title">Your Loan Calculator</h2>
+  <div class="form">
+    <form action="#">
+
+      <div class="form-group">
+        <div class="form-group-info">
+          <label for="price" class="price-title">Purchase Price</label>
+          <span id="pricevalue">750000$</span>
+        </div>
+        <input type="range" class="change-loan" id="price" value="750000" min="100" max="1000000" oninput="pricevalue.innerText=value + ' $'"/>
+      </div>
+      <div class="form-group">
+        <div class="form-group-info">
+          <label for="payment" class="payment">Down Payment</label>
+          <span id="downpayment">4.89%</span>
+        </div>
+        <input type="range" id="payment"  class="change-loan"  value="4.89" step="0.01" name="vol" min="0" max="24" oninput="downpayment.innerText=value + ' %'">
+      </div>
+
+      <div class="form-group">
+        <div class="form-group-info">
+          <label for="rate" class="rate" >Rate</label>
+          <span id="rateValue">12%</span>
+        </div>
+        <input type="range" id="rate" value="12" class="change-loan" step="0.01" name="vol" min="0" max="24" oninput="rateValue.innerText=value + ' %'">
+      </div>
+
+
+
+      <div class="form-group">
+        <div class="form-group-info">
+
+          <div class="period-radio">
+            <div>
+              <label for="period" class="period-lbl" >Period</label>
+
+              <label for="year" class="year-title">Year</label>
+              <input value="year" type="radio" class="change-period-type" id="year" name="periodType" checked>
+
+              <label for="month" class="month-title">Month</label>
+              <input  value="month" type="radio" class="change-period-type" id="month" name="periodType">
+            </div>
+
+
+
+            <div class="period-type-section">
+              <span id="periodValue">2 </span>
+              <span id="period-type"> years</span>
+
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+
+        <input type="range" value="2" id="period"  class="change-loan" name="vol" min="1" max="20" oninput="periodValue.innerText=value">
+      </div>
+
+
+
+    </form>
+
+  </div>
+  <div class="monthly-payment">
+    <h2 id="monthly-payment-price">
+      33578.68$
+    </h2>
+  </div>
+</section>
+
+
+<script src="js/script-loan.js"></script>
+</body>
+</html>
